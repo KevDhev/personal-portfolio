@@ -1,6 +1,4 @@
-/*===============*/
-/*GENERAL STYLES*/
-/*==============*/
+/* ============================== GENERAL STYLES ===============================*/
 :root{
     --font-subtitle: 'Open Sans', sans-serif;
     --color-text: white;
@@ -36,10 +34,7 @@
     background-color: var(--color-blue);
 }
 
-/*===============*/
-/*HEADER STYLES*/
-/*==============*/
-
+/* =============================== HEADER STYLES ===============================*/
 .first-section{
     display: flex;
     flex-direction: row;
@@ -91,10 +86,7 @@
     color: var(--color-blue);
 }
 
-/*===============*/
-/*ABOUT-ME STYLES*/
-/*==============*/
-
+/* ============================== ABOUT-ME STYLES ==============================*/
 .second-section{
     display: flex;
     flex-direction: column;
@@ -104,10 +96,7 @@
     width: 1000px;
 }
 
-/*====================*/
-/*TECHNOLOGIES STYLES*/
-/*===================*/
-
+/* ============================ TECHNOLOGIES STYLES ============================*/
 .third-section{
     display: flex;
     flex-direction: column;
@@ -133,10 +122,7 @@
     height: 100px;
 }
 
-/*================*/
-/*PROJECTS STYLES*/
-/*==============*/
-
+/* ============================== PROJECTS STYLES ==============================*/
 .fourth-section{
     display: flex;
     flex-direction: column;
@@ -159,6 +145,7 @@
 .fhs-item{
     display: flex;
     flex-direction: row-reverse;
+    border: 1px solid blue;
     width: 1000px;
     border-radius: 20px;
     padding: 20px;
@@ -235,10 +222,8 @@
 .gt:hover{
     background-color: rgb(99, 99, 99);
 }
-/*================*/
-/*EXPERIENCE STYLES*/
-/*==============*/
 
+/* ============================== EXPERIENCE STYLES ============================*/
 .fifth-section{
     display: flex;
     flex-direction: column;
@@ -256,6 +241,8 @@
 .ffs-item{
     display: flex;
     flex-direction: column;
+    border: 1px solid blue;
+    margin: 0 auto;
     border-radius: 10px;
     padding: 20px;
 }
@@ -272,10 +259,7 @@
     padding-left: 40px;
 }
 
-/*================*/
-/*EDUCATION STYLES*/
-/*==============*/
-
+/* ============================== EDUCATION STYLES =============================*/
 .sixth-section{
     display: flex;
     flex-direction: column;
@@ -297,10 +281,7 @@
     gap: 20px;
 }
 
-/*================*/
-/*FOOTER STYLES*/
-/*==============*/
-
+/* ============================== FOOTER STYLES ================================*/
 .last-section{
     display: flex;
     justify-content: center;
@@ -325,4 +306,76 @@
 .ls-icon:hover{
     cursor: pointer;
     color: var(--color-blue);
+}
+
+/* ============================== MEDIA QUERIES ================================*/
+@media (max-width: 980px) {
+    .second-section{
+        border: 1px solid blue;
+        width: 800px;
+    }  
+
+    .fhs-item{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 700px;
+    }
+
+    .item-d2{
+        margin-top: 15px;
+        width: 700px;
+        align-items: center;
+    }
+
+    .item-text{
+        padding-left: 30px;
+        width: 450px;
+    }
+
+    .ffs-item{
+        width: 700px;
+    }
+}
+
+@media (max-width: 860px) {
+    .second-section{
+        width: 600px;
+    }
+
+    .third-section,
+    .fourth-section,
+    .fifth-section,
+    .sixth-section{
+        width: 700px;
+    }
+}
+
+@media (max-width: 750px) {
+    .fhs-item{
+        width: 500px;
+    }
+
+    .item-d2{
+        width: 500px;
+    }
+
+    .item-text{
+        width: 400px;
+    }
+
+    .fifth-section{
+        padding: 0;
+        width: 500px;
+    }
+
+    .ffs-item{
+        width: 500px;
+    }
+}
+
+@media (max-width: 610px) {
+    .second-section{
+        width: 490px;
+    }
 }
