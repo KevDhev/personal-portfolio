@@ -1,0 +1,122 @@
+/* ============================== GENERAL STYLES ===============================*/
+:root {
+  --font-subtitle: "Open Sans", sans-serif;
+  --color-text: white;
+  --color-blue: rgb(108, 108, 243);
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: var(--font-subtitle);
+}
+
+/* =============================== HEADER STYLES ===============================*/
+.header-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(rgba(5, 7, 12, 0.85), rgba(5, 7, 12, 0.85)),
+    url(../img/banner6.jpg) no-repeat center;
+  background-size: cover;
+  color: var(--color-text);
+  gap: 25px;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+h1 {
+  font-family: "Boldonse", system-ui;
+}
+
+.header-info h2 {
+  font-family: var(--font-subtitle);
+  font-style: italic;
+  font-size: 25px;
+  color: var(--color-blue);
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-icon:hover {
+  color: var(--color-blue);
+  transition: all 0.4s ease-in-out;
+}
+
+#email:hover {
+  cursor: pointer;
+}
+
+/* ============================== ABOUT-ME STYLES ==============================*/
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px auto;
+  padding: 20px 10px 20px 20px;
+  width: 1000px;
+  border: 1px solid red;
+}
+
+.about-section p {
+  width: 95ch;
+}
+
+/* ============================ TECHNOLOGIES STYLES ============================*/
+.technologies {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1000px;
+  margin: 15px auto;
+  gap: 25px;
+  padding: 20px;
+}
+
+.front-section,
+.back-section,
+.tools-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: bisque;
+  border-radius: 20px;
+}
+
+.tech-subtitle {
+  margin-bottom: 10px;
+}
+
+.tech-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+}
+
+.tech-icon {
+  width: 100px;
+  height: 100px;
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Favicon-->
+    <link
+      rel="icon"
+      href="img/favicons/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      href="img/favicons/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link rel="icon" href="img/favicons/favicon.ico" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Boldonse&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/update.css" />
+    <script src="main.js" defer></script>
+    <title>Kevin Marquez | Portafolio</title>
+  </head>
+  <body>
+    <header class="header-section">
+      <img src="./img/perfil.jpg" alt="Kevin Marquez" class="profile" />
+      <article class="header-info">
+        <h1>Kevin Marquez</h1>
+        <h2>Desarrollador Web</h2>
+        <p>Puedes contactarme con:</p>
+        <ul class="contact">
+          <li>
+            <!-- Logo de email -->
+            <svg
+              class="contact-icon"
+              id="email"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-mail"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z"
+              />
+              <path
+                d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z"
+              />
+            </svg>
+          </li>
+          <li>
+            <!-- Logo de linkedin -->
+            <a
+              href="https://www.linkedin.com/in/kevin-marquez-marrufo"
+              target="_blank"
+            >
+              <svg
+                class="contact-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="icon icon-tabler icons-tabler-filled icon-tabler-brand-linkedin"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M17 2a5 5 0 0 1 5 5v10a5 5 0 0 1 -5 5h-10a5 5 0 0 1 -5 -5v-10a5 5 0 0 1 5 -5zm-9 8a1 1 0 0 0 -1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0 -1 -1m6 0a3 3 0 0 0 -1.168 .236l-.125 .057a1 1 0 0 0 -1.707 .707v5a1 1 0 0 0 2 0v-3a1 1 0 0 1 2 0v3a1 1 0 0 0 2 0v-3a3 3 0 0 0 -3 -3m-6 -3a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <!-- Logo de CV -->
+            <a
+              href="https://drive.google.com/file/d/1cgqnaQIGJaH-LSuNwqi7v0dXD7pVqo-1/view?usp=sharing"
+              target="_blank"
+            >
+              <svg
+                class="contact-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="icon icon-tabler icons-tabler-filled icon-tabler-file-cv"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M12 2l.117 .007a1 1 0 0 1 .876 .876l.007 .117v4l.005 .15a2 2 0 0 0 1.838 1.844l.157 .006h4l.117 .007a1 1 0 0 1 .876 .876l.007 .117v9a3 3 0 0 1 -2.824 2.995l-.176 .005h-10a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-14a3 3 0 0 1 2.824 -2.995l.176 -.005zm-2.5 8a2.5 2.5 0 0 0 -2.5 2.5v3a2.5 2.5 0 1 0 5 0a1 1 0 0 0 -2 0a.5 .5 0 1 1 -1 0v-3a.5 .5 0 1 1 1 0a1 1 0 0 0 2 0a2.5 2.5 0 0 0 -2.5 -2.5m6.743 .03a1 1 0 0 0 -1.213 .727l-.53 2.119l-.53 -2.119a1 1 0 1 0 -1.94 .486l1.5 6c.252 1.01 1.688 1.01 1.94 0l1.5 -6a1 1 0 0 0 -.727 -1.213m-1.244 -7.031l4.001 4.001h-4z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <!-- Logo de github -->
+            <a href="https://github.com/KevDhev" target="_blank">
+              <svg
+                class="contact-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="icon icon-tabler icons-tabler-filled icon-tabler-brand-github"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </article>
+    </header>
+    <main>
+      <section class="about-section">
+        <h2 class="subtitle">Sobre mí</h2>
+        <p>
+          Desarrollador Front-end con enfoque en experiencia de usuario y
+          eficiencia. Especializado en la creación de interfaces interactivas y
+          funcionales utilizando tecnologías modernas. Autodidacta en constante
+          aprendizaje, comprometido con ofrecer soluciones visuales intuitivas
+          que resuelvan problemas concretos y generen impacto real.
+        </p>
+      </section>
+      <section class="technologies">
+        <h2 class="subtitle">Tecnologías</h2>
+        <section class="front-section">
+          <h3 class="tech-subtitle">Front-end</h3>
+          <ul class="tech-list">
+            <li>
+              <img src="./img/svg/html.svg" alt="HTML" class="tech-icon" />
+            </li>
+            <li>
+              <img src="./img/svg/css.svg" alt="CSS" class="tech-icon" />
+            </li>
+            <li>
+              <img src="./img/svg/js.svg" alt="JavaScript" class="tech-icon" />
+            </li>
+            <li>
+              <img
+                src="./img/svg/typescript.svg"
+                alt="TypeScript"
+                class="tech-icon"
+              />
+            </li>
+            <li>
+              <img src="./img/svg/react.svg" alt="React" class="tech-icon" />
+            </li>
+          </ul>
+        </section>
+        <section class="back-section">
+          <h3 class="tech-subtitle">Back-end</h3>
+          <ul class="tech-list">
+            <li>
+              <img src="./img/svg/python.svg" alt="Python" class="tech-icon" />
+            </li>
+            <li>
+              <img
+                src="./img/svg/fastapi.svg"
+                alt="FastAPI"
+                class="tech-icon"
+              />
+            </li>
+            <li>
+              <img src="./img/svg/sql.svg" alt="SQL" class="tech-icon" />
+            </li>
+          </ul>
+        </section>
+        <section class="tools-section">
+          <h3 class="tech-subtitle">Herramientas</h3>
+          <ul class="tech-list">
+            <li>
+              <img src="./img/svg/git.svg" alt="Git" class="tech-icon" />
+            </li>
+            <li>
+              <img src="./img/svg/bash.svg" alt="Bash" class="tech-icon" />
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section class="projects">
+        <h2 class="subtitle">Proyectos</h2>
+        <ul class="projects-list">
+          <li>
+            <article class="project">
+              <img
+                src="./img/mantenimiento.png"
+                alt="anime-search screenshot"
+                class="project-image"
+              />
+              <section class="project-info">
+                <h3>Anime Search</h3>
+                <p>
+                  Aplicación web que permite buscar animes utilizando la API
+                  pública de Jikan. Cuenta con un buscador interactivo, la
+                  posibilidad de marcar animes como favoritos y una sección de
+                  recomendaciones que muestra animes populares de forma
+                  rotativa.
+                </p>
+                <ul class="project-tech-list">
+                  <li>
+                    <img
+                      src="./img/svg/html.svg"
+                      alt="HTML"
+                      class="project-tech-icon"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./img/svg/css.svg"
+                      alt="CSS"
+                      class="project-tech-icon"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./img/svg/typescript.svg"
+                      alt="TypeScript"
+                      class="project-tech-icon"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./img/svg/react.svg"
+                      alt="React"
+                      class="project-tech-icon"
+                    />
+                  </li>
+                </ul>
+                <ul class="anchors-list">
+                  <li>
+                    <a href="#" class="anchor-btn youtube" target="_blank"
+                      >Ver Demo</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/KevDhev/anime-search.git"
+                      class="anchor-btn github"
+                      target="_blank"
+                      >Ver Código</a
+                    >
+                  </li>
+                </ul>
+              </section>
+            </article>
+          </li>
+          <li>
+            <article class="project">
+              <img
+                src="./img/mantenimiento.png"
+                alt="personal finance API screenshot"
+                class="project-image"
+              />
+              <section class="project-info">
+                <h3>Personal Finance API</h3>
+                <p>
+                  API REST para la gestión de finanzas personales. Permite
+                  registrar ingresos y gastos, filtrar por tipo y fecha, y
+                  calcular balances generales.
+                </p>
+                <ul class="project-tech-list">
+                  <li>
+                    <img
+                      src="./img/svg/python.svg"
+                      alt="Python"
+                      class="project-tech-icon"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./img/svg/fastapi.svg"
+                      alt="FastAPI"
+                      class="project-tech-icon"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./img/svg/sql.svg"
+                      alt="SQL"
+                      class="project-tech-icon"
+                    />
+                  </li>
+                </ul>
+                <ul class="anchors-list">
+                  <li>
+                    <a href="#" class="anchor-btn youtube" target="_blank"
+                      >Ver Demo</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/KevDhev/personal-finance-api.git"
+                      class="anchor-btn github"
+                      target="_blank"
+                      >Ver Código</a
+                    >
+                  </li>
+                </ul>
+              </section>
+            </article>
+          </li>
+          <li>
+            <article class="project">
+              <img
+                src="./img/mantenimiento.png"
+                alt="script screenshot"
+                class="project-image"
+              />
+              <section class="project-info">
+                <h3>Scriptorium Vault</h3>
+                <p>
+                  Un laboratorio de herramientas útiles que reúne una colección
+                  diversa de scripts diseñados para resolver tareas mediante
+                  automatización, extracción de datos (scraping), generación de
+                  contenido, manejo de archivos y más.
+                </p>
+                <ul class="project-tech-list">
+                  <li>
+                    <img
+                      src="./img/svg/python.svg"
+                      alt="Python"
+                      class="project-tech-icon"
+                    />
+                  </li>
+                </ul>
+                <ul class="anchors-list">
+                  <li>
+                    <a href="#" class="anchor-btn youtube" target="_blank"
+                      >Ver Demo</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/KevDhev/scriptorium-vault.git"
+                      class="anchor-btn github"
+                      target="_blank"
+                      >Ver Código</a
+                    >
+                  </li>
+                </ul>
+              </section>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
