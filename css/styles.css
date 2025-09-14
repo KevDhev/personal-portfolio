@@ -1,477 +1,547 @@
 /* ============================== GENERAL STYLES ===============================*/
-:root{
-    --font-subtitle: 'Open Sans', sans-serif;
-    --color-text: white;
-    --color-blue: rgb(108, 108, 243);
+:root {
+  --font-subtitle: "Open Sans", sans-serif;
+  --color-text: white;
+  --color-blue: rgb(108, 108, 243);
 }
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.ss-title,
-.ts-title,
-.fhs-title,
-.ffs-title,
-.sxs-title{
-    font-family: var(--font-subtitle);
-    text-align: center;
+.subtitle {
+  margin: 0 auto;
+  font-family: var(--font-subtitle);
 }
 
-.view-more{
-    display: flex;
-    text-align: center;
-    padding: 10px 20px;
-    color: white;
-    font-weight: bold;
-    background-color: blue;
-    margin: 20px auto;
-    line-height: 1.5;
-    border-radius: 15px;
+.view-more {
+  display: flex;
+  text-align: center;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  background-color: blue;
+  margin: 30px auto 0 auto;
+  line-height: 1.5;
+  border-radius: 15px;
+  transition: all 500ms ease-in-out;
 }
 
-.view-more:hover{
-    background-color: var(--color-blue);
+.view-more:hover {
+  background-color: blueviolet;
+  transform: scale(1.2);
 }
 
 /* =============================== HEADER STYLES ===============================*/
-.first-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 400px;
-    background: linear-gradient(rgba(5,7,12, 0.85), rgba(5,7,12, 0.85)), url(../img/banner6.jpg) no-repeat center;
-    background-size: cover;
-    color: var(--color-text);
-    gap: 25px;
+.header-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(rgba(5, 7, 12, 0.85), rgba(5, 7, 12, 0.85)),
+    url(../img/banner6.jpg) no-repeat center;
+  background-size: cover;
+  color: var(--color-text);
+  gap: 25px;
 }
 
-.fs-img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
-.fs-title{
-    font-family: 'Boldonse', system-ui;
+h1 {
+  font-family: "Boldonse", system-ui;
 }
 
-.fs-subtitle{
-    font-family: var(--font-subtitle);
-    font-style: italic;
-    font-size: 25px;
-    color: var(--color-blue);
+.header-info h2 {
+  font-family: var(--font-subtitle);
+  font-style: italic;
+  font-size: 25px;
+  color: var(--color-blue);
 }
 
-.fs-contact{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+.contact {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
-.fs-icon{
-    width: 40px;
-    height: 40px;
+.contact-icon {
+  width: 40px;
+  height: 40px;
 }
 
-.fs-icon:hover{
-    color: var(--color-blue);
+.contact-icon:hover {
+  color: var(--color-blue);
+  transition: all 0.4s ease-in-out;
 }
 
-#email:hover,
-#email2:hover{
-    cursor: pointer;
-    color: var(--color-blue);
+#email:hover {
+  cursor: pointer;
 }
 
 /* ============================== ABOUT-ME STYLES ==============================*/
-.second-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 15px auto;
-    padding: 20px 10px 20px 20px;
-    width: 1000px;
+.about-section {
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto;
+  padding: 20px 10px 20px 10px;
+  width: 1000px;
+}
+
+.about-section p {
+  width: 90ch;
+  margin: 0 auto;
 }
 
 /* ============================ TECHNOLOGIES STYLES ============================*/
-.third-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 1000px;
-    margin: 15px auto;
-    padding: 20px;
+.technologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1000px;
+  margin: 15px auto;
+  gap: 25px;
+  padding: 20px;
 }
 
-.ts-title{
-    margin-bottom: 10px;
+.front-section,
+.back-section,
+.tools-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: bisque;
+  border-radius: 20px;
 }
 
-.ts-list{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 25px;
+.tech-subtitle {
+  margin-bottom: 10px;
 }
 
-.ts-icon{
-    width: 100px;
-    height: 100px;
+.tech-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+}
+
+.tech-icon {
+  width: 100px;
+  height: 100px;
 }
 
 /* ============================== PROJECTS STYLES ==============================*/
-.fourth-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 1000px;
-    margin: 15px auto;
-    padding: 20px;
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1000px;
+  margin: 15px auto;
+  padding: 20px;
 }
 
-.fhs-title{
-    margin-bottom: 10px;
+.projects h2 {
+  margin-bottom: 10px;
 }
 
-.fhs-list{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.fhs-item{
-    display: flex;
-    flex-direction: row-reverse;
-    border: 1px solid blue;
-    width: 1000px;
-    border-radius: 20px;
-    padding: 20px;
+.project {
+  display: flex;
+  flex-direction: row-reverse;
+  border: 1px solid blue;
+  border-radius: 20px;
+  padding: 20px;
 }
 
-.item-d1{
-    display: flex;
-    justify-content: end;
+.project-image {
+  display: flex;
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 40%;
+  height: 200px;
 }
 
-.item-d2{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    width: 70%;
+.project-info {
+  width: 60%;
 }
 
-.item-text{
-    width: 550px;
+.project-info p {
+  width: 60ch;
 }
 
-.item-img{
-    display: flex;
-    height: auto;
-    border-radius: 20px;
-    border: 1px solid black;
-    width: 400px;
-    height: 200px;
+.project-tech-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.item-list{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.project-tech-icon {
+  width: 40px;
+  height: 40px;
 }
 
-.item-icon{
-    width: 40px;
-    height: 40px;
+.anchors-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 25px;
+  gap: 30px;
 }
 
-.item-anchors{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    margin-top: auto;
-    gap: 30px;
+.anchor-btn {
+  display: flex;
+  text-align: center;
+  padding: 5px 10px;
+  font-weight: bold;
+  line-height: 1.5;
+  border-radius: 15px;
 }
 
-.anchor-btn{
-    display: flex;
-    text-align: center;
-    padding: 5px 10px;
-    color: white;
-    font-weight: bold;
-    line-height: 1.5;
-    border-radius: 15px;
+.youtube {
+  background-color: transparent;
+  border: 1px solid red;
+  color: red;
+  transition: all 500ms ease-in-out;
 }
 
-.yt{
-    background-color: red;
+.youtube:hover {
+  background-color: red;
+  color: white;
 }
 
-.yt:hover{
-    background-color: rgb(244, 102, 102);
+.github {
+  background-color: transparent;
+  border: 1px solid black;
+  transition: all 500ms ease-in-out;
 }
 
-.gt{
-    background-color: black;
-}
-
-.gt:hover{
-    background-color: rgb(99, 99, 99);
+.github:hover {
+  background-color: black;
+  color: white;
 }
 
 /* ============================== EXPERIENCE STYLES ============================*/
-.fifth-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 1000px;
-    margin: 15px auto;
-    padding: 20px;
-    gap: 25px;
+.work-experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1000px;
+  margin: 15px auto;
+  padding: 20px;
+  gap: 25px;
 }
 
-.ffs-title{
-    margin-bottom: 10px;
+.work-experience h2 {
+  margin-bottom: 10px;
 }
 
-.ffs-item{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid blue;
-    margin: 0 auto;
-    border-radius: 10px;
-    padding: 20px;
+.experience {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.item-exp-date{
-    font-style: italic;
-    color: #1919aa;
+.experience span {
+  font-style: italic;
+  color: #1919aa;
 }
 
-.item-exp-list{
-    display: flex;
-    flex-direction: column;
-    list-style: disc;
-    padding-left: 40px;
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  list-style: disc;
+  padding-left: 40px;
 }
 
 /* ============================== EDUCATION STYLES =============================*/
-.sixth-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 1000px;
-    margin: 15px auto;
-    padding: 20px;
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1000px;
+  margin: 15px auto;
+  padding: 20px;
 }
 
-.sxs-title{
-    margin-bottom: 15px;
+.education h2 {
+  margin-bottom: 15px;
 }
 
-.sxs-list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    gap: 20px;
+.education-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 20px;
 }
 
 /* ============================== FOOTER STYLES ================================*/
-.last-section{
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 70px;
+}
+
+.footer-section ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  color: white;
+}
+
+.footer-icon {
+  width: 45px;
+  height: 45px;
+}
+
+.footer-icon:hover {
+  cursor: pointer;
+  color: var(--color-blue);
+  transition: all 0.4s ease-in-out;
+}
+
+/* ============================== MEDIA QUERYS =================================*/
+/*========== Laptops =========*/
+@media (max-width: 930px) {
+  /*ABOUT-ME STYLES*/
+  .about-section {
+    width: calc(930px - 20px);
+  }
+  /*TECHNOLOGIES STYLES*/
+  .technologies {
+    width: calc(930px - 30px);
+  }
+
+  .tech-icon {
+    width: 80px;
+    height: 80px;
+  }
+  /*PROJECTS STYLES*/
+  .projects {
+    width: calc(930px - 20px);
+  }
+
+  .project-info p {
+    width: 54ch;
+  }
+  /*EXPERIENCE STYLES*/
+  .work-experience {
+    width: calc(930px - 20px);
+  }
+
+  /*EDUCATION STYLES*/
+  .education {
+    width: calc(930px - 20px);
+  }
+}
+/*========== Tablets =========*/
+@media (max-width: 768px) {
+  /*ABOUT-ME STYLES*/
+  .about-section {
+    width: calc(768px - 28px);
+  }
+
+  .about-section p {
+    width: 70ch;
+  }
+
+  /*TECHNOLOGIES STYLES*/
+  .technologies {
+    width: calc(768px - 28px);
+  }
+
+  .tech-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  /*PROJECTS STYLES*/
+  .projects {
+    width: calc(768px - 28px);
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .project-image {
+    margin: 0 auto 20px auto;
+    width: 60%;
+  }
+
+  .project-info {
+    width: 100%;
+  }
+
+  .project-info h3 {
+    text-align: center;
+  }
+
+  .project-info p {
+    margin: 0 auto;
+    padding-left: 1rem;
+  }
+
+  .project-tech-list {
+    justify-content: center;
+  }
+
+  .anchors-list {
+    justify-content: center;
+  }
+
+  /*EXPERIENCIE STYLES*/
+  .work-experience {
+    width: calc(768px - 28px);
+  }
+
+  /*EDUCATION STYLES*/
+  .education {
+    width: calc(768px - 28px);
+  }
+}
+/*========== Large Mobile Phones =========*/
+@media (max-width: 480px) {
+  /*HEADER STYLES*/
+  .header-section {
+    flex-direction: column;
+  }
+
+  .profile {
+    width: 180px;
+    height: 180px;
+  }
+
+  .header-info {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    width: 100%;
-    height: 80px;
+  }
+
+  /*ABOUT-ME STYLES*/
+  .about-section {
+    width: calc(480px - 20px);
+  }
+
+  .about-section p {
+    width: 48ch;
+    margin: 0 auto;
+  }
+
+  /*TECHNOLOGIES STYLES*/
+  .technologies {
+    width: calc(480px - 20px);
+  }
+
+  .tech-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  /*PROJECTS STYLES*/
+  .projects {
+    width: calc(480px - 20px);
+  }
+
+  .project-image {
+    width: 70%;
+    height: 150px;
+  }
+
+  .project-info p {
+    padding: 0;
+    width: 40ch;
+  }
+
+  /*EXPERIENCE STYLES*/
+  .work-experience {
+    width: calc(480px - 20px);
+  }
+
+  /*EDUCATION STYLES*/
+  .education {
+    width: calc(480px - 20px);
+  }
 }
+/*========== Small Mobile Phones =========*/
+@media (max-width: 320px) {
+  /*HEADER STYLES*/
+  .profile {
+    width: 150px;
+    height: 150px;
+  }
 
-.ls-list{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    color: white;
-}
+  .header-info h2 {
+    font-size: 22px;
+  }
+  /*ABOUT-ME STYLES*/
+  .about-section {
+    width: calc(320px - 20px);
+  }
 
-.ls-icon{
-    width: 45px;
-    height: 45px;
-}
+  .about-section p {
+    width: 31ch;
+    text-align: center;
+  }
+  /*TECHNOLOGIES STYLES*/
+  .technologies {
+    width: calc(320px - 20px);
+  }
 
-.ls-icon:hover{
-    cursor: pointer;
-    color: var(--color-blue);
-}
+  .tech-list {
+    flex-wrap: wrap;
+  }
 
-/* ============================== MEDIA QUERIES ================================*/
-@media (max-width: 980px) {
-    .second-section{
-        width: 800px;
-    }  
+  .tech-icon {
+    width: 60px;
+    height: 60px;
+  }
+  /*PROJECTS STYLES*/
+  .projects {
+    width: calc(320px - 20px);
+  }
 
-    .fhs-item{
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-        width: 700px;
-    }
+  .project-image {
+    width: 90%;
+    height: 115px;
+  }
 
-    .item-d2{
-        margin-top: 15px;
-        width: 700px;
-        align-items: center;
-    }
+  .project-info p {
+    width: 24ch;
+    text-align: center;
+  }
+  /*EXPERIENCE STYLES*/
+  .work-experience {
+    width: calc(320px - 20px);
+  }
+  /*EDUCATION STYLES*/
+  .education {
+    width: calc(320px - 20px);
+  }
 
-    .item-text{
-        padding-left: 30px;
-        width: 450px;
-    }
-
-    .ffs-item{
-        width: 700px;
-    }
-}
-
-@media (max-width: 860px) {
-    .second-section{
-        width: 600px;
-    }
-
-    .third-section,
-    .fourth-section,
-    .fifth-section,
-    .sixth-section{
-        width: 700px;
-    }
-}
-
-@media (max-width: 750px) {
-    .fhs-item{
-        width: 500px;
-    }
-
-    .item-d2{
-        width: 500px;
-    }
-
-    .item-text{
-        width: 400px;
-    }
-
-    .fifth-section{
-        padding: 0;
-        width: 500px;
-    }
-
-    .ffs-item{
-        width: 500px;
-    }
-}
-
-@media (max-width: 610px) {
-    .second-section{
-        width: 470px;
-        padding: 0;
-    }
-
-    .third-section{
-        width: 380px;
-    }
-    .ts-list{
-        flex-wrap: wrap;
-    }
-
-    .fourth-section{
-        width: 500px;
-    }
-    .fhs-item{
-        width: 430px;
-    }
-    .item-text{
-        padding-left: 25px;
-        width: 390px;
-    }
-
-    .sixth-section{
-        width: 470px;
-    }
-}
-
-@media (max-width: 520px) {
-    .first-section{
-        flex-direction: column;
-    }
-    .fs-img-div{
-        width: 400px;
-    }
-    .fs-img{
-        width: 170px;
-        height: 170px;
-        margin: 0 auto;
-    }
-    .fs-info{
-        width: 400px;
-    }
-    .fs-title,
-    .fs-subtitle,
-    .fs-info p{
-        text-align: center;
-    }
-    .fs-contact{
-        justify-content: center;
-    }
-
-    .second-section{
-        width: 375px;
-    }
-
-    .third-section{
-        width: 300px;
-    }
-
-    .fourth-section{
-        width: 400px;
-        padding: 0;
-    }
-    .fhs-item{
-        width: 400px;
-    }
-    .item-text{
-        width: 325px;
-        padding-left: 10px;
-    }
-
-    .fifth-section{
-        width: 400px;
-    }
-    .ffs-item{
-        width: 360px;
-    }
-
-    .sixth-section{
-        width: 370px;
-    }
-}
-
-@media (max-width: 415px) {
-    .fourth-section{
-        width: 350px;
-        padding: 0;
-    }
-    .fhs-item{
-        width: 350px;
-    }
-    .item-text{
-        width: 310px;
-        padding-left: 5px;
-    }
-
-    .sixth-section{
-        width: 350px;
-    }
+  .education h2 {
+    font-size: 20px;
+  }
 }
